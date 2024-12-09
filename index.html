@@ -5,13 +5,27 @@
     <title>iTunes</title>
     <link href="styes.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
 </head>
 <body>
+    <input id="artist" placeholder="Artist Name">
+    <button id="run">GO!</button>
+    Number of Results: <input id="numResults" placeholder="Number of Results" value=25>
 
-    <button onclick="run()">GO!</button>
+    <div id="err"></div>
 
-    <table id="output" border="1"></table>
+    <table id="outputTable" border="1">
+        <tr>
+            <th>Number</th>
+            <th>Artist Name</th>
+            <th>Song Title</th>
+            <th>Song Preview</th>
+            <th>Album Title</th>
+            <th>Album Cover</th>
+        </tr>
+    </table>
+    
+
+    <script src="script.js"></script>
 
 </body>
 </html>
